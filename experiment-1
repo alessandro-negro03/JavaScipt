@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+    alert( "sono un programma semplice ma carino" );
+    let nome;
+    nome = "alessandro";
+    alert("mi chiamo" );
+    alert(nome);
+  </script>
+
+</body>
+
+</html>
