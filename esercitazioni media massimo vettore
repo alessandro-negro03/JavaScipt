@@ -1,0 +1,21 @@
+let n = prompt('inserire numero n', "");
+let x =0
+n=n*1
+let v = []
+for (i=0; i<n; i++){
+    let x = prompt("inserire valore", "")
+    x=x*1
+    v.push(x)
+    
+}
+let massimo = Math.max.apply(Math, v)
+alert(massimo)
+
+let somma = 0
+for (i=0; i<n; i++){
+    somma = somma + v[i]
+}
+
+let media = somma/n
+alert(media)
+
