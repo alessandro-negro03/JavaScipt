@@ -1,0 +1,39 @@
+const fs = require("fs")
+
+
+console.log("carico i file testo.txt")
+
+fs.readFile("./testo1.txt",(err,data) => {
+	if (err){
+		throw err
+	}
+	
+	const testo1 = data.toString()
+	
+	fs.readFile("./testo2.txt",(err,data) => {
+	if (err){
+		throw err
+	}
+	const testo2 = data.toString()
+	
+
+		fs.readFile("./testo3.txt",(err,data) =>{
+			if (err){
+				throw err
+			}
+			const testo3 = data.toString()
+			
+		
+
+			fs.writeFile("./testofinale.txt", testo1 + " " + testo2 + " " + testo3, (err) =>{
+				if (err){
+					throw err
+				}
+			
+			})
+
+		})
+	})
+})
+
+console.log("fine")
